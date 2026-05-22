@@ -19,7 +19,14 @@
       "Bash(sips --help)",
       "Bash(rtk read *)",
       "Bash(rtk du *)",
-      "Bash(chmod +x scripts/optimize-food.sh)"
+      "Bash(chmod +x scripts/optimize-food.sh)",
+      "Bash(dig +short A litalane.co.uk)",
+      "Bash(dig +short AAAA litalane.co.uk)",
+      "Bash(dig +short CNAME www.litalane.co.uk)",
+      "Bash(dig +short A www.litalane.co.uk)",
+      "Bash(dig +short NS litalane.co.uk)",
+      "Bash(rtk curl *)",
+      "Bash(dig +short CAA litalane.co.uk)"
     ]
   }
 }

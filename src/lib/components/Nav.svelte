@@ -5,24 +5,24 @@
   import { openContact } from '$lib/stores/contact.svelte.js';
 </script>
 
-<nav class="nav">
+<nav class="nav" aria-label="Primary">
   <div class="nav__inner">
-    <a href="{base}/#top" class="nav__brand">
-      <Lantern size={28} color="var(--cocoa)" />
+    <a href="{base}/#top" class="nav__brand" aria-label="Litalane home">
+      <span aria-hidden="true"><Lantern size={28} color="var(--cocoa)" /></span>
       <div class="wm">
         LITALANE
         <small>Newport · Wales</small>
       </div>
     </a>
-    <div class="nav__links">
-      <a href="{base}/#beauty">Beauty & Wellness</a>
-      <a href="{base}/#chef">Private Chef</a>
-      <a href="{base}/#cleaning">Cleaning</a>
-      <a href="{base}/#testimonials">Reviews</a>
-      <a href="{base}/#about">About Lita</a>
-      <a href="{base}/#faq">FAQ</a>
-    </div>
-    <button class="btn btn--dark btn--small" onclick={() => openContact()}>
+    <ul class="nav__links" role="list">
+      <li><a href="{base}/#beauty">Beauty & Wellness</a></li>
+      <li><a href="{base}/#chef">Private Chef</a></li>
+      <li><a href="{base}/#cleaning">Cleaning</a></li>
+      <li><a href="{base}/#testimonials">Reviews</a></li>
+      <li><a href="{base}/#about">About Lita</a></li>
+      <li><a href="{base}/#faq">FAQ</a></li>
+    </ul>
+    <button type="button" class="btn btn--dark btn--small" onclick={() => openContact()} aria-label="Contact Lita — open contact options">
       Contact Lita <Arrow />
     </button>
   </div>

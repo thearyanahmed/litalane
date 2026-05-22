@@ -5,7 +5,7 @@
   import { openContact } from '$lib/stores/contact.svelte.js';
 </script>
 
-<section class="section wrap">
+<section class="section wrap" aria-label="Gift vouchers and loyalty">
   <div class="gift-grid">
     <div class="gift-card">
       <div>

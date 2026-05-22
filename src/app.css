@@ -43,6 +43,48 @@ img { max-width: 100%; display: block; }
 button { font: inherit; cursor: pointer; border: 0; background: none; color: inherit; padding: 0; }
 a { color: inherit; text-decoration: none; }
 
+:focus { outline: none; }
+:focus-visible {
+  outline: 2px solid var(--terracotta);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+.dark-section :focus-visible,
+.footer :focus-visible,
+.strip :focus-visible {
+  outline-color: var(--peach);
+}
+
+.skip-link {
+  position: fixed;
+  top: -100px;
+  left: 16px;
+  z-index: 1000;
+  background: var(--cocoa);
+  color: var(--cream);
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-family: var(--f-mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: top .2s ease;
+}
+.skip-link:focus-visible {
+  top: 12px;
+  outline: 2px solid var(--peach);
+  outline-offset: 2px;
+}
+
+body.scroll-lock { overflow: hidden; }
+
+@media (prefers-reduced-motion: reduce) {
+  .strip__inner { animation: none; }
+  .btn, .btn:hover, .btn:active { transition: none; transform: none; }
+  .img-slot__img { transition: none !important; filter: none !important; transform: none !important; }
+  .faq__a { transition: none; }
+}
+
 /* ============ typography ============ */
 .eyebrow {
   font-family: var(--f-mono);
@@ -302,6 +344,9 @@ a { color: inherit; text-decoration: none; }
 .nav__links {
   display: flex;
   gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .nav__links a {
   font-size: 13.5px;
@@ -998,7 +1043,6 @@ a { color: inherit; text-decoration: none; }
 .faq__item {
   border-top: 1px solid var(--line);
   padding: 24px 0;
-  cursor: pointer;
 }
 .faq__item:last-child { border-bottom: 1px solid var(--line); }
 .faq__q {
@@ -1011,6 +1055,12 @@ a { color: inherit; text-decoration: none; }
   color: var(--cocoa);
   line-height: 1.25;
   font-weight: 500;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
 }
 .faq__q .plus {
   font-family: var(--f-mono);
@@ -1081,6 +1131,19 @@ a { color: inherit; text-decoration: none; }
 .footer ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
 .footer ul a { font-size: 14px; color: rgba(246,239,227,.85); transition: color .15s; }
 .footer ul a:hover { color: var(--peach); }
+.footer__linklike {
+  font: inherit;
+  font-size: 14px;
+  color: rgba(246,239,227,.85);
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+  transition: color .15s;
+}
+.footer__linklike:hover { color: var(--peach); }
+.footer__linklike:focus-visible { outline: 2px solid var(--peach); outline-offset: 3px; border-radius: 2px; }
 
 .footer__bottom {
   display: flex;

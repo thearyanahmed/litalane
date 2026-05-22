@@ -7,8 +7,15 @@
   import { foodImages } from '$lib/food.js';
   import { openContact } from '$lib/stores/contact.svelte.js';
 
-  const food = foodImages(base);
+  const food = foodImages();
+  const preloadA = food[0] ?? null;
+  const preloadB = food[Math.min(12, Math.max(0, food.length - 1))] ?? null;
 </script>
+
+<svelte:head>
+  {#if preloadA}<link rel="preload" as="image" href={preloadA} fetchpriority="high" />{/if}
+  {#if preloadB && preloadB !== preloadA}<link rel="preload" as="image" href={preloadB} />{/if}
+</svelte:head>
 
 <section class="hero wrap" id="top">
   <div class="hero__grid">
@@ -35,7 +42,7 @@
 
       <div class="hero__meta">
         <div class="item">
-          <strong>3</strong>
+          <strong>16</strong>
           <span>Services</span>
         </div>
         <div class="item">

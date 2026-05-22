@@ -1,4 +1,5 @@
 <script>
+  import { tick } from 'svelte';
   import Lantern from './Lantern.svelte';
   import Arrow from './Arrow.svelte';
   import { contactState, closeContact } from '$lib/stores/contact.svelte.js';
@@ -13,6 +14,9 @@
   };
 
   let copied = $state('');
+  let drawerEl;
+  let closeBtnEl;
+  let lastFocus = null;
 
   let message = $derived(
     contactState.prefilled
@@ -33,24 +37,79 @@
   function onOverlay(e) {
     if (e.target === e.currentTarget) closeContact();
   }
+
+  function trapFocus(e) {
+    if (e.key !== 'Tab' || !drawerEl) return;
+    const focusables = drawerEl.querySelectorAll(
+      'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])'
+    );
+    if (!focusables.length) return;
+    const first = focusables[0];
+    const last = focusables[focusables.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  }
+
+  function onKey(e) {
+    if (!contactState.open) return;
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      closeContact();
+    } else if (e.key === 'Tab') {
+      trapFocus(e);
+    }
+  }
+
+  $effect(() => {
+    if (typeof window === 'undefined') return;
+    if (contactState.open) {
+      lastFocus = document.activeElement;
+      document.body.classList.add('scroll-lock');
+      window.addEventListener('keydown', onKey);
+      tick().then(() => closeBtnEl?.focus());
+    } else {
+      document.body.classList.remove('scroll-lock');
+      window.removeEventListener('keydown', onKey);
+      if (lastFocus && typeof lastFocus.focus === 'function') {
+        lastFocus.focus();
+        lastFocus = null;
+      }
+    }
+    return () => {
+      document.body.classList.remove('scroll-lock');
+      window.removeEventListener('keydown', onKey);
+    };
+  });
 </script>
 
 {#if contactState.open}
-  <div class="booking-overlay" onclick={onOverlay} onkeydown={(e) => { if (e.key === 'Escape') closeContact(); }} role="dialog" aria-modal="true" tabindex="-1">
-    <div class="booking contact-drawer">
+  <div class="booking-overlay" onclick={onOverlay} role="presentation">
+    <div
+      class="booking contact-drawer"
+      bind:this={drawerEl}
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="contact-title"
+      tabindex="-1"
+    >
       <div class="booking__header">
         <div style="display: flex; align-items: center; gap: 12px">
-          <Lantern size={24} color="var(--cocoa)" />
+          <span aria-hidden="true"><Lantern size={24} color="var(--cocoa)" /></span>
           <div>
             <div style="font-family: var(--f-display); font-size: 20px; font-weight: 500; letter-spacing: 0.04em; line-height: 1">LITALANE</div>
             <div style="font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.2em; color: var(--brass); text-transform: uppercase; margin-top: 3px">Get in touch</div>
           </div>
         </div>
-        <button class="booking__close" onclick={closeContact} aria-label="Close">×</button>
+        <button type="button" class="booking__close" bind:this={closeBtnEl} onclick={closeContact} aria-label="Close contact panel">×</button>
       </div>
 
       <div class="contact-body">
-        <h2 class="booking__h">
+        <h2 id="contact-title" class="booking__h">
           Reach out & we'll<br /><i>arrange a time.</i>
         </h2>
         <p class="booking__sub">

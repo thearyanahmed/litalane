@@ -12,7 +12,7 @@
   const doubled = [...items, ...items];
 </script>
 
-<div class="strip">
+<div class="strip" aria-hidden="true">
   <div class="strip__inner">
     {#each doubled as it, i}
       <span>{it}</span>

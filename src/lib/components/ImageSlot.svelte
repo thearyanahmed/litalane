@@ -1,5 +1,5 @@
 <script>
-  import { onMount, onDestroy } from 'svelte';
+  import { onMount, onDestroy, untrack } from 'svelte';
 
   let {
     images,
@@ -10,13 +10,22 @@
     alt = ''
   } = $props();
 
-  let idx = $state(((offset % images.length) + images.length) % images.length);
+  let idx = $state(
+    untrack(() => (images.length ? ((offset % images.length) + images.length) % images.length : 0))
+  );
   let timer;
 
   function blurFade(node, { duration = 900 }) {
+    const reduced =
+      typeof window !== 'undefined' &&
+      typeof window.matchMedia === 'function' &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     return {
-      duration,
-      css: (t) => `opacity: ${t}; filter: blur(${(1 - t) * 14}px); transform: scale(${0.985 + t * 0.015});`
+      duration: reduced ? 0 : duration,
+      css: (t) =>
+        reduced
+          ? `opacity: ${t};`
+          : `opacity: ${t}; filter: blur(${(1 - t) * 14}px); transform: scale(${0.985 + t * 0.015});`
     };
   }
 

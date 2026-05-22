@@ -25,7 +25,7 @@
           <li><a href="{base}/#beauty">Beauty & Wellness</a></li>
           <li><a href="{base}/#chef">Private Chef</a></li>
           <li><a href="{base}/#cleaning">Home Cleaning</a></li>
-          <li><a href="#" onclick={(e) => { e.preventDefault(); openContact('gift'); }}>Gift vouchers</a></li>
+          <li><button type="button" class="footer__linklike" onclick={() => openContact('gift')}>Gift vouchers</button></li>
         </ul>
       </div>
 
@@ -42,10 +42,10 @@
       <div>
         <h5>Elsewhere</h5>
         <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="https://wa.me/447761496145" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
-          <li><a href="#">TikTok</a></li>
+          <li><a href="https://www.instagram.com/litalane" target="_blank" rel="noopener noreferrer" aria-label="Litalane on Instagram">Instagram</a></li>
+          <li><a href="https://www.facebook.com/litalane" target="_blank" rel="noopener noreferrer" aria-label="Litalane on Facebook">Facebook</a></li>
+          <li><a href="https://wa.me/447761496145" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Lita">WhatsApp</a></li>
+          <li><a href="https://www.tiktok.com/@litalane" target="_blank" rel="noopener noreferrer" aria-label="Litalane on TikTok">TikTok</a></li>
         </ul>
       </div>
     </div>

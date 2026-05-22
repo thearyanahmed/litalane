@@ -2,7 +2,7 @@
   let { size = 28, color = 'currentColor' } = $props();
 </script>
 
-<svg width={size} height={size} viewBox="0 0 32 36" fill="none" stroke={color} stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" style="display: block">
+<svg width={size} height={size} viewBox="0 0 32 36" fill="none" stroke={color} stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" style="display: block" role="img" aria-hidden="true" focusable="false">
   <path d="M16 2 V5" />
   <path d="M10 5 H22" />
   <path d="M8 8 H24 L23 12 H9 Z" />

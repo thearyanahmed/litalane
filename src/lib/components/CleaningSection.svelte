@@ -4,11 +4,11 @@
   import { openContact } from '$lib/stores/contact.svelte.js';
 </script>
 
-<section class="section wrap" id="cleaning">
+<section class="section wrap" id="cleaning" aria-labelledby="cleaning-heading">
   <div class="section-head">
     <div class="section-head__title">
       <div class="svc__number">03 — Home Cleaning</div>
-      <h2 class="h-section" style="margin-top: 16px">
+      <h2 id="cleaning-heading" class="h-section" style="margin-top: 16px">
         A trusted team,<br />sent to your <i>door.</i>
       </h2>
     </div>

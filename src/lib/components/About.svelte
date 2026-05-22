@@ -3,7 +3,7 @@
   import Placeholder from './Placeholder.svelte';
 </script>
 
-<section class="section wrap" id="about">
+<section class="section wrap" id="about" aria-label="About Lita">
   <div class="about__grid">
     <div class="about__portrait">
       <Placeholder label="lita's kitchen · still life" style="width: 100%; height: 100%" />

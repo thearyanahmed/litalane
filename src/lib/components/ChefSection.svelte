@@ -1,19 +1,18 @@
 <script>
-  import { base } from '$app/paths';
   import Arrow from './Arrow.svelte';
   import ImageSlot from './ImageSlot.svelte';
   import { foodImages } from '$lib/food.js';
   import { openContact } from '$lib/stores/contact.svelte.js';
 
-  const food = foodImages(base);
+  const food = foodImages();
 </script>
 
-<section class="section warm-section" id="chef">
+<section class="section warm-section" id="chef" aria-labelledby="chef-heading">
   <div class="wrap">
     <div class="section-head">
       <div class="section-head__title">
         <div class="svc__number" style="color: var(--terracotta-d)">02 — Private Chef & Catering</div>
-        <h2 class="h-section" style="margin-top: 16px">
+        <h2 id="chef-heading" class="h-section" style="margin-top: 16px">
           Food made by<br />a mother's <i>hands.</i>
         </h2>
       </div>

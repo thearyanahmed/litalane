@@ -14,11 +14,11 @@
   ];
 </script>
 
-<section class="section wrap" id="beauty">
+<section class="section wrap" id="beauty" aria-labelledby="beauty-heading">
   <div class="section-head">
     <div class="section-head__title">
       <div class="svc__number">01 — Beauty & Wellness</div>
-      <h2 class="h-section" style="margin-top: 16px">
+      <h2 id="beauty-heading" class="h-section" style="margin-top: 16px">
         A women-only<br /><i>sanctuary</i>, at home.
       </h2>
     </div>

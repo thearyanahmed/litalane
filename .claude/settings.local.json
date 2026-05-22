@@ -26,7 +26,11 @@
       "Bash(dig +short A www.litalane.co.uk)",
       "Bash(dig +short NS litalane.co.uk)",
       "Bash(rtk curl *)",
-      "Bash(dig +short CAA litalane.co.uk)"
+      "Bash(dig +short CAA litalane.co.uk)",
+      "Bash(dig +short TXT _github-pages-challenge-thearyanahmed.litalane.co.uk)",
+      "Bash(dig +short TXT _github-challenge-thearyanahmed.litalane.co.uk)",
+      "Bash(rtk gh *)",
+      "Bash(tee /tmp/build.log)"
     ]
   }
 }

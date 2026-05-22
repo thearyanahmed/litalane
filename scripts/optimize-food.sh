@@ -16,7 +16,7 @@
 set -euo pipefail
 
 SRC="${1:-.food-originals}"
-OUT="${2:-static/food}"
+OUT="${2:-src/lib/assets/food}"
 MAX_DIM="${MAX_DIM:-1800}"
 QUALITY="${QUALITY:-82}"
 PREFIX="${PREFIX:-food}"

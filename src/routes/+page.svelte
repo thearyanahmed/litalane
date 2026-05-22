@@ -14,14 +14,18 @@
 </script>
 
 <Nav />
-<Hero />
-<Strip />
-<About />
-<BeautySection />
-<ChefSection />
-<CleaningSection />
-<Testimonials />
-<GiftAndLoyalty />
-<FAQ />
+
+<main id="main" tabindex="-1">
+  <Hero />
+  <Strip />
+  <About />
+  <BeautySection />
+  <ChefSection />
+  <CleaningSection />
+  <Testimonials />
+  <GiftAndLoyalty />
+  <FAQ />
+</main>
+
 <Footer />
 <Contact />

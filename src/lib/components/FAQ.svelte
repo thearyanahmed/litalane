@@ -12,13 +12,16 @@
   ];
 
   let open = $state(0);
+  function toggle(i) {
+    open = open === i ? -1 : i;
+  }
 </script>
 
-<section class="section wrap" id="faq">
+<section class="section wrap" id="faq" aria-labelledby="faq-heading">
   <div class="faq__grid">
     <div>
       <Eyebrow>{#snippet children()}Questions{/snippet}</Eyebrow>
-      <h2 class="h-section" style="margin-top: 16px">
+      <h2 id="faq-heading" class="h-section" style="margin-top: 16px">
         Asked &<br /><i>answered.</i>
       </h2>
       <p class="body-m" style="margin-top: 24px; max-width: 360px">
@@ -31,18 +34,21 @@
 
     <div class="faq__list">
       {#each FAQS as item, i}
-        <div
-          class="faq__item {open === i ? 'open' : ''}"
-          onclick={() => (open = open === i ? -1 : i)}
-          onkeydown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open = open === i ? -1 : i; } }}
-          role="button"
-          tabindex="0"
-        >
-          <div class="faq__q">
+        {@const id = `faq-a-${i}`}
+        <div class="faq__item {open === i ? 'open' : ''}">
+          <button
+            type="button"
+            class="faq__q"
+            aria-expanded={open === i}
+            aria-controls={id}
+            onclick={() => toggle(i)}
+          >
             <span>{item.q}</span>
-            <span class="plus">+</span>
+            <span class="plus" aria-hidden="true">+</span>
+          </button>
+          <div {id} class="faq__a" role="region" aria-hidden={open !== i}>
+            <div class="faq__a-inner">{item.a}</div>
           </div>
-          <div class="faq__a"><div class="faq__a-inner">{item.a}</div></div>
         </div>
       {/each}
     </div>

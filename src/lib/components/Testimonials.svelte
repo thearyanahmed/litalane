@@ -52,11 +52,11 @@
   }
 </script>
 
-<section class="section dark-section" id="testimonials">
+<section class="section dark-section" id="testimonials" aria-labelledby="testimonials-heading">
   <div class="wrap">
     <div class="t-head">
       <Eyebrow light>{#snippet children()}What clients say{/snippet}</Eyebrow>
-      <h2 class="h-section" style="margin-top: 16px; color: var(--cream)">
+      <h2 id="testimonials-heading" class="h-section" style="margin-top: 16px; color: var(--cream)">
         The reason we<br />keep <i>going.</i>
       </h2>
       <p class="body-m" style="margin-top: 24px; max-width: 520px">
@@ -146,7 +146,7 @@
       </div>
       <div class="t-platform t-platform--cta">
         <div class="t-platform__cta-head">Booked us before?</div>
-        <a href="#" class="t-platform__cta">Leave a review →</a>
+        <a href="https://g.page/r/litalane/review" target="_blank" rel="noopener noreferrer" class="t-platform__cta" aria-label="Leave a Google review for Litalane">Leave a review →</a>
       </div>
     </div>
   </div>

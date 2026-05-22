@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rtk ls *)",
+      "Read(//private/tmp/**)",
+      "Bash(cp /Users/thearyanahmed/.claude/projects/-Users-thearyanahmed-dev-litalane/6fad23b3-c276-46f1-92b1-dd5138779cd6/tool-results/webfetch-1779474673945-348lqb.bin design.gz)",
+      "Bash(gunzip -k design.gz)",
+      "Bash(mkdir -p /tmp/design_extract)",
+      "Bash(tar -xf /tmp/design -C /tmp/design_extract)",
+      "Bash(bun --version)",
+      "Bash(command -v brew)",
+      "Bash(brew --prefix)",
+      "Bash(bun install *)",
+      "Bash(node -e 'console.log\\(typeof crypto?.getRandomValues\\)')",
+      "Bash(bun run *)",
+      "Bash(rtk wc *)",
+      "Bash(rtk grep *)",
+      "Bash(file static/food/*)",
+      "Bash(sips --help)",
+      "Bash(rtk read *)",
+      "Bash(rtk du *)",
+      "Bash(chmod +x scripts/optimize-food.sh)"
+    ]
+  }
+}

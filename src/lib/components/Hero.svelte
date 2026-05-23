@@ -2,11 +2,12 @@
   import { base } from '$app/paths';
   import Eyebrow from './Eyebrow.svelte';
   import Arrow from './Arrow.svelte';
-  import Placeholder from './Placeholder.svelte';
   import ImageSlot from './ImageSlot.svelte';
   import { foodImages } from '$lib/food.js';
+  import { createHeroCycle } from '$lib/hero-images.svelte.js';
   import { openContact } from '$lib/stores/contact.svelte.js';
 
+  const cycle = createHeroCycle();
   const food = foodImages();
   const preloadA = food[0] ?? null;
   const preloadB = food[Math.min(12, Math.max(0, food.length - 1))] ?? null;
@@ -21,7 +22,7 @@
   <div class="hero__grid">
     <div class="hero__left">
       <div class="hero__location">
-        <Eyebrow>{#snippet children()}Newport · NP19 · Booking now{/snippet}</Eyebrow>
+        <Eyebrow>{#snippet children()}Newport · Booking now{/snippet}</Eyebrow>
       </div>
       <h1 class="hero__title">
         A quieter<br />kind of <em>care.</em>
@@ -61,10 +62,10 @@
     </div>
 
     <div class="hero__right">
-      <Placeholder label="warm oils & linen" className="hero__ph-1" />
-      <Placeholder label="manicure detail · hands" className="hero__ph-2" />
-      <ImageSlot images={food} offset={0} interval={4800} className="hero__ph-3" alt="Fresh herbs from Lita's kitchen" />
-      <ImageSlot images={food} offset={12} interval={5400} className="hero__ph-4" alt="Plated dish · chef service" />
+      <ImageSlot images={cycle.pool} offset={0} interval={4600} className="hero__ph-1" alt="Lita Lane care & kitchen" />
+      <ImageSlot images={cycle.pool} offset={6} interval={5200} className="hero__ph-2" alt="Lita Lane care & kitchen" />
+      <ImageSlot images={cycle.pool} offset={12} interval={4800} className="hero__ph-3" alt="Lita Lane care & kitchen" />
+      <ImageSlot images={cycle.pool} offset={18} interval={5400} className="hero__ph-4" alt="Lita Lane care & kitchen" />
     </div>
   </div>
 </section>

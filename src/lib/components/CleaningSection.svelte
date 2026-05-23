@@ -1,16 +1,16 @@
 <script>
   import Arrow from './Arrow.svelte';
-  import Placeholder from './Placeholder.svelte';
+  import ImageSlot from './ImageSlot.svelte';
+  import { homeImages } from '$lib/home.js';
   import { openContact } from '$lib/stores/contact.svelte.js';
+
+  const home = homeImages();
 </script>
 
-<section class="section wrap" id="cleaning" aria-labelledby="cleaning-heading">
+<section class="section wrap" id="cleaning" aria-label="Home Cleaning">
   <div class="section-head">
     <div class="section-head__title">
       <div class="svc__number">03 — Home Cleaning</div>
-      <h2 id="cleaning-heading" class="h-section" style="margin-top: 16px">
-        A trusted team,<br />sent to your <i>door.</i>
-      </h2>
     </div>
     <div class="section-head__meta">
       <p class="body-m">
@@ -31,19 +31,19 @@
       </div>
 
       <p class="body-l" style="margin-bottom: 8px">
-        By the hour, or on a quiet schedule that runs itself.
+        One-off cleans, or a quiet schedule that runs itself.
       </p>
 
       <div class="pkg-row">
         <div class="pkg">
-          <div class="pkg__tag">Hourly · One-off</div>
-          <div class="pkg__name">By the hour</div>
-          <div class="pkg__desc">1–8 hour bookings. Standard clean, deep clean, or end-of-tenancy.</div>
+          <div class="pkg__tag">One-off</div>
+          <div class="pkg__name">Single visit</div>
+          <div class="pkg__desc">Standard clean, deep clean, or end-of-tenancy.</div>
         </div>
         <div class="pkg featured">
           <div class="pkg__tag">Most popular</div>
           <div class="pkg__name">Weekly plan</div>
-          <div class="pkg__desc">Same day, same cleaner, every week. Minimum 2 hours per visit.</div>
+          <div class="pkg__desc">Same day, same cleaner, every week.</div>
         </div>
         <div class="pkg">
           <div class="pkg__tag">Recurring</div>
@@ -81,9 +81,10 @@
     </div>
 
     <div class="svc__media">
-      <Placeholder label="kitchen · after" className="ph-a" />
-      <Placeholder label="supplies · still life" className="ph-b" />
-      <Placeholder label="living room · sunlit" className="ph-c" />
+      <ImageSlot images={home} offset={0} interval={5200} className="ph-a" alt="Lita Lane home cleaning" />
+      <ImageSlot images={home} offset={1} interval={4800} className="ph-b" alt="Lita Lane home cleaning" />
+      <ImageSlot images={home} offset={2} interval={5600} className="ph-c" alt="Lita Lane home cleaning" />
+      <ImageSlot images={home} offset={3} interval={5000} className="ph-d" alt="Lita Lane home cleaning" />
     </div>
   </div>
 </section>

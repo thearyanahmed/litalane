@@ -1,6 +1,5 @@
 <script>
   import { base } from '$app/paths';
-  import Lantern from './Lantern.svelte';
   import Arrow from './Arrow.svelte';
   import { openContact } from '$lib/stores/contact.svelte.js';
 </script>
@@ -8,9 +7,9 @@
 <nav class="nav" aria-label="Primary">
   <div class="nav__inner">
     <a href="{base}/#top" class="nav__brand" aria-label="Litalane home">
-      <span aria-hidden="true"><Lantern size={28} color="var(--cocoa)" /></span>
+      <img src="{base}/lita-lane-mark.png" alt="" class="nav__mark" width="44" height="44" />
       <div class="wm">
-        LITALANE
+        <span class="wm__lita">LITA</span> <span class="wm__lane">LANE</span>
         <small>Newport · Wales</small>
       </div>
     </a>

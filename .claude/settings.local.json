@@ -30,7 +30,11 @@
       "Bash(dig +short TXT _github-pages-challenge-thearyanahmed.litalane.co.uk)",
       "Bash(dig +short TXT _github-challenge-thearyanahmed.litalane.co.uk)",
       "Bash(rtk gh *)",
-      "Bash(tee /tmp/build.log)"
+      "Bash(tee /tmp/build.log)",
+      "Bash(mkdir -p /Users/thearyanahmed/dev/litalane/src/lib/assets/care)",
+      "Bash(touch /Users/thearyanahmed/dev/litalane/src/lib/assets/care/.gitkeep)",
+      "Bash(awk '/^\\\\.svc /,/^}/' /Users/thearyanahmed/dev/litalane/src/app.css)",
+      "Bash(awk '/^\\\\.section-head__meta/,/^}/' /Users/thearyanahmed/dev/litalane/src/app.css)"
     ]
   }
 }

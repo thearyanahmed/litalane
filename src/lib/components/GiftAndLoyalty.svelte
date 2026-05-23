@@ -15,7 +15,7 @@
           Give a quiet hour.
         </h3>
         <p style="max-width: 360px; margin-top: 16px; color: rgba(255,255,255,.85); font-size: 15px">
-          A handwritten card, posted to your recipient or sent by email.
+          A handwritten card, posted to your recipient or shared by message.
           Redeemable against any service — any amount, any occasion.
         </p>
       </div>

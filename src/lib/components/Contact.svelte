@@ -1,16 +1,14 @@
 <script>
   import { tick } from 'svelte';
-  import Lantern from './Lantern.svelte';
+  import { base } from '$app/paths';
   import Arrow from './Arrow.svelte';
   import { contactState, closeContact } from '$lib/stores/contact.svelte.js';
 
   const CONTACT = {
-    phoneDisplay: '+44 7761 496 145',
-    phoneRaw: '+447761496145',
-    whatsappRaw: '447761496145',
-    email: 'hello@litalane.co.uk',
-    hours: 'Mon — Sat · 8am — 8pm',
-    area: 'Newport · Wales'
+    phoneDisplay: '07727 855 730',
+    phoneRaw: '07727855730',
+    whatsappRaw: '447727855730',
+    hours: '7 days a week · 9:30am — 9:30pm'
   };
 
   let copied = $state('');
@@ -99,9 +97,11 @@
     >
       <div class="booking__header">
         <div style="display: flex; align-items: center; gap: 12px">
-          <span aria-hidden="true"><Lantern size={24} color="var(--cocoa)" /></span>
+          <img src="{base}/lita-lane-mark.png" alt="" width="36" height="36" style="display: block" />
           <div>
-            <div style="font-family: var(--f-display); font-size: 20px; font-weight: 500; letter-spacing: 0.04em; line-height: 1">LITALANE</div>
+            <div style="font-family: var(--f-display); font-size: 20px; font-weight: 500; letter-spacing: 0.06em; line-height: 1">
+              <span style="color: var(--cocoa)">LITA</span> <span style="color: #9a8f85; font-weight: 400">LANE</span>
+            </div>
             <div style="font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.2em; color: var(--brass); text-transform: uppercase; margin-top: 3px">Get in touch</div>
           </div>
         </div>
@@ -116,13 +116,6 @@
           Litalane is a small, personal practice. The fastest way to book is
           a quick message — Lita usually replies within two hours.
         </p>
-
-        {#if contactState.prefilled}
-          <div class="contact-prefill">
-            <span class="contact-prefill__label">You're enquiring about</span>
-            <span class="contact-prefill__value">{contactState.prefilled}</span>
-          </div>
-        {/if}
 
         <a href={waLink} target="_blank" rel="noopener noreferrer" class="contact-card contact-card--primary">
           <div class="contact-card__icon">
@@ -154,38 +147,6 @@
             <button class="btn btn--ghost btn--small" onclick={() => copy(CONTACT.phoneRaw, 'phone')}>
               {copied === 'phone' ? 'Copied ✓' : 'Copy'}
             </button>
-          </div>
-        </div>
-
-        <div class="contact-card">
-          <div class="contact-card__icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-              <path d="M22 6l-10 7L2 6" />
-            </svg>
-          </div>
-          <div class="contact-card__body">
-            <div class="contact-card__label">Email</div>
-            <div class="contact-card__value">{CONTACT.email}</div>
-            <div class="contact-card__sub">Best for catering quotes & events</div>
-          </div>
-          <div class="contact-card__actions">
-            <a href={`mailto:${CONTACT.email}`} class="btn btn--ghost btn--small">Email</a>
-            <button class="btn btn--ghost btn--small" onclick={() => copy(CONTACT.email, 'email')}>
-              {copied === 'email' ? 'Copied ✓' : 'Copy'}
-            </button>
-          </div>
-        </div>
-
-        <div class="contact-meta">
-          <div class="contact-meta__row">
-            <span class="k">Area</span><span class="v">{CONTACT.area}</span>
-          </div>
-          <div class="contact-meta__row">
-            <span class="k">Hours</span><span class="v">{CONTACT.hours}</span>
-          </div>
-          <div class="contact-meta__row">
-            <span class="k">Languages</span><span class="v">English · Arabic</span>
           </div>
         </div>
 

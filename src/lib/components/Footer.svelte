@@ -1,6 +1,5 @@
 <script>
   import { base } from '$app/paths';
-  import Lantern from './Lantern.svelte';
   import { openContact } from '$lib/stores/contact.svelte.js';
 </script>
 
@@ -8,10 +7,7 @@
   <div class="wrap">
     <div class="footer__grid">
       <div class="footer__brand">
-        <Lantern size={40} color="var(--peach)" />
-        <div class="wm" style="margin-top: 12px">
-          LITALANE
-        </div>
+        <img src="{base}/lita-lane-logo.png" alt="Litalane" class="footer__logo" />
         <small>Newport · Wales · Est. 2023</small>
         <p>
           A women-led practice for the people of Newport. Beauty, food,
@@ -32,10 +28,9 @@
       <div>
         <h5>Contact</h5>
         <ul>
-          <li><a href="https://wa.me/447761496145" target="_blank" rel="noopener noreferrer">WhatsApp Lita</a></li>
-          <li><a href="tel:+447761496145">+44 7761 496 145</a></li>
-          <li><a href="mailto:hello@litalane.co.uk">hello@litalane.co.uk</a></li>
-          <li>Newport, NP19 · Mon–Sat · 8am — 8pm</li>
+          <li><a href="https://wa.me/447727855730" target="_blank" rel="noopener noreferrer">WhatsApp Lita</a></li>
+          <li><a href="tel:07727855730" class="phone-link">07727 855 730</a></li>
+          <li>Newport, NP19 · 7 days a week · 9:30am — 9:30pm</li>
         </ul>
       </div>
 
@@ -44,7 +39,7 @@
         <ul>
           <li><a href="https://www.instagram.com/litalane" target="_blank" rel="noopener noreferrer" aria-label="Litalane on Instagram">Instagram</a></li>
           <li><a href="https://www.facebook.com/litalane" target="_blank" rel="noopener noreferrer" aria-label="Litalane on Facebook">Facebook</a></li>
-          <li><a href="https://wa.me/447761496145" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Lita">WhatsApp</a></li>
+          <li><a href="https://wa.me/447727855730" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Lita">WhatsApp</a></li>
           <li><a href="https://www.tiktok.com/@litalane" target="_blank" rel="noopener noreferrer" aria-label="Litalane on TikTok">TikTok</a></li>
         </ul>
       </div>

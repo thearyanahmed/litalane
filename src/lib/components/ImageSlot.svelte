@@ -15,6 +15,16 @@
   );
   let timer;
 
+  // Re-anchor index when the pool reference changes (e.g. hero cycle swaps
+  // food <-> care). Each slot's distinct offset keeps the grid varied.
+  let lastPool;
+  $effect(() => {
+    if (images === lastPool) return;
+    lastPool = images;
+    const len = images.length;
+    idx = len ? ((offset % len) + len) % len : 0;
+  });
+
   function blurFade(node, { duration = 900 }) {
     const reduced =
       typeof window !== 'undefined' &&
@@ -31,7 +41,7 @@
 
   onMount(() => {
     timer = setInterval(() => {
-      idx = (idx + 1) % images.length;
+      if (images.length) idx = (idx + 1) % images.length;
     }, interval);
   });
 
@@ -68,5 +78,13 @@
     object-fit: cover;
     display: block;
     will-change: opacity, filter, transform;
+    transition: transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .img-slot:hover .img-slot__img {
+    transform: scale(1.20);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .img-slot__img { transition: none; }
+    .img-slot:hover .img-slot__img { transform: none; }
   }
 </style>

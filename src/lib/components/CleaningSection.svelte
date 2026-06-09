@@ -10,7 +10,7 @@
 <section class="section wrap" id="cleaning" aria-label="Home Cleaning">
   <div class="section-head">
     <div class="section-head__title">
-      <div class="svc__number">03 — Home Cleaning</div>
+      <div class="svc__number">02 — Home Cleaning</div>
     </div>
     <div class="section-head__meta">
       <p class="body-m">
@@ -34,11 +34,11 @@
         One-off cleans, or a quiet schedule that runs itself.
       </p>
 
-      <div class="pkg-row">
+      <div class="pkg-row" style="grid-template-columns: repeat(2, 1fr)">
         <div class="pkg">
           <div class="pkg__tag">One-off</div>
           <div class="pkg__name">Single visit</div>
-          <div class="pkg__desc">Standard clean, deep clean, or end-of-tenancy.</div>
+          <div class="pkg__desc">Standard or deep clean, booked as needed.</div>
         </div>
         <div class="pkg featured">
           <div class="pkg__tag">Most popular</div>
@@ -50,15 +50,16 @@
           <div class="pkg__name">Fortnightly / monthly</div>
           <div class="pkg__desc">A lighter rhythm. Skip a week any time, no fee.</div>
         </div>
+        <div class="pkg">
+          <div class="pkg__tag">Move-out</div>
+          <div class="pkg__name">End of tenancy</div>
+          <div class="pkg__desc">Full property deep clean — kitchen, oven, bathrooms, carpets, windows. Agent-ready, deposit-back focused.</div>
+        </div>
       </div>
 
       <div class="svc__menu" style="margin-top: 32px">
         <div class="svc__row svc__row--noprice">
           <div class="name">Specialist oven clean<small>Deep carbon removal · eco solvents</small></div>
-          <div class="dot-end" aria-hidden="true">·</div>
-        </div>
-        <div class="svc__row svc__row--noprice">
-          <div class="name">End of tenancy<small>Full property, agent-ready</small></div>
           <div class="dot-end" aria-hidden="true">·</div>
         </div>
         <div class="svc__row svc__row--noprice">
@@ -81,10 +82,9 @@
     </div>
 
     <div class="svc__media">
-      <ImageSlot images={home} offset={0} interval={5200} className="ph-a" alt="Lita Lane home cleaning" />
-      <ImageSlot images={home} offset={1} interval={4800} className="ph-b" alt="Lita Lane home cleaning" />
-      <ImageSlot images={home} offset={2} interval={5600} className="ph-c" alt="Lita Lane home cleaning" />
-      <ImageSlot images={home} offset={3} interval={5000} className="ph-d" alt="Lita Lane home cleaning" />
+      <ImageSlot images={home} offset={0} interval={5200} className="ph-a" alt="Lita Lane home cleaning" orientation="portrait" group="clean-home" />
+      <ImageSlot images={home} offset={0} interval={4800} className="ph-b" alt="Lita Lane home cleaning" orientation="landscape" group="clean-home" />
+      <ImageSlot images={home} offset={1} interval={5600} className="ph-c" alt="Lita Lane home cleaning" orientation="landscape" group="clean-home" />
     </div>
   </div>
 </section>

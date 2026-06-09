@@ -1,7 +1,12 @@
 <script>
     import Arrow from "./Arrow.svelte";
+    import ImageSlot from "./ImageSlot.svelte";
     import Placeholder from "./Placeholder.svelte";
+    import { careImages } from "$lib/care.js";
     import { openContact } from "$lib/stores/contact.svelte.js";
+
+    const care = careImages();
+    const hasCare = care.length > 0;
 
     const BEAUTY_MENU = [
         {
@@ -13,23 +18,39 @@
             note: "60 mins · essential-oil blends, sleep & calm",
         },
         {
+            name: "Deep Tissue Massage",
+            note: "60 mins · targeted pressure for tension release",
+        },
+        {
             name: "Prenatal & Postnatal",
             note: "60 mins · safe positioning, gentle pressure",
         },
         { name: "Reflexology", note: "30 mins · foot focus, deep release" },
+        { name: "Head & Scalp Massage", note: "30 mins · with warm oils" },
         {
             name: "Facial — mini",
-            note: "30 mins · with products suitable for sensitive skin",
+            note: "30 mins · products suitable for sensitive skin",
         },
         {
             name: "Facial — full",
-            note: "60 mins · with products suitable for sensitive skin",
+            note: "60 mins · cleanse, mask, massage, finish",
         },
         {
             name: "Manicure & Pedicure",
             note: "individual treatments, natural finishes",
         },
-        { name: "Hair treatment", note: "with home made mask" },
+        {
+            name: "Hair treatment",
+            note: "deep conditioning · with home-made mask",
+        },
+        {
+            name: "Henna & body art",
+            note: "natural henna · occasions & everyday",
+        },
+        {
+            name: "Brow & lash tidy",
+            note: "shaping, tinting, gentle finish",
+        },
     ];
 </script>
 
@@ -43,9 +64,11 @@
         </div>
         <div class="section-head__meta">
             <p class="body-m">
-                Lita comes to you with everything she needs — towels, oils, and
-                a quiet hour where it's just you. All beauty appointments are
-                women-only, every product organic.
+                Lita trained in London for the kind of unhurried, women-only
+                practice Newport didn't yet have. She arrives at your door with
+                everything she needs — towels, oils, candles — and a quiet
+                hour where it's just you. Every product organic, every
+                appointment private.
             </p>
         </div>
     </div>
@@ -56,10 +79,42 @@
                 <span class="chip">Women-only</span>
                 <span class="chip">Organic products</span>
                 <span class="chip">In your home</span>
+                <span class="chip">London-trained</span>
                 <span class="chip">Newport area</span>
             </div>
 
-            <div class="svc__menu">
+            <p class="body-l" style="margin-bottom: 24px">
+                Three ways to book your ritual:
+            </p>
+
+            <div class="pkg-row">
+                <div class="pkg">
+                    <div class="pkg__tag">Single session</div>
+                    <div class="pkg__name">One treatment</div>
+                    <div class="pkg__desc">
+                        Pick any treatment from the menu below. Booked
+                        individually, paid per session.
+                    </div>
+                </div>
+                <div class="pkg featured">
+                    <div class="pkg__tag">Most loved</div>
+                    <div class="pkg__name">Monthly ritual</div>
+                    <div class="pkg__desc">
+                        A standing appointment each month — massage, facial, or
+                        a combined hour. Same Lita, same quiet routine.
+                    </div>
+                </div>
+                <div class="pkg">
+                    <div class="pkg__tag">Occasions</div>
+                    <div class="pkg__name">Bridal & event</div>
+                    <div class="pkg__desc">
+                        Pre-wedding, hen, birthday or just a friends' afternoon.
+                        Hair, henna and finishing touches for a small group.
+                    </div>
+                </div>
+            </div>
+
+            <div class="svc__menu" style="margin-top: 32px">
                 {#each BEAUTY_MENU as row}
                     <div class="svc__row svc__row--noprice">
                         <div class="name">
@@ -73,7 +128,7 @@
 
             <p class="price-note">
                 Each treatment is priced individually — message Lita for the
-                latest rates and any seasonal offers.
+                latest rates, package bundles, and any seasonal offers.
             </p>
 
             <div class="svc__cta-row">
@@ -88,11 +143,59 @@
         </div>
 
         <div class="svc__media">
-            <Placeholder label="oils & candles · still life" className="ph-a" />
-            <Placeholder label="<PLACEHOLDER>" className="ph-b" />
-            <Placeholder label="pedicure detail" className="ph-c" />
-            <Placeholder label="hands · henna detail" className="ph-d" />
-            <Placeholder label="rose & ingredients" className="ph-e" />
+            {#if hasCare}
+                <ImageSlot
+                    images={care}
+                    offset={0}
+                    interval={5200}
+                    className="ph-a"
+                    alt="Beauty & wellness ritual"
+                    orientation="landscape"
+                    group="beauty-care"
+                />
+                <ImageSlot
+                    images={care}
+                    offset={0}
+                    interval={4800}
+                    className="ph-b"
+                    alt="Beauty & wellness ritual"
+                    orientation="portrait"
+                    group="beauty-care"
+                />
+                <ImageSlot
+                    images={care}
+                    offset={1}
+                    interval={5600}
+                    className="ph-c"
+                    alt="Beauty & wellness ritual"
+                    orientation="landscape"
+                    group="beauty-care"
+                />
+                <ImageSlot
+                    images={care}
+                    offset={2}
+                    interval={5000}
+                    className="ph-d"
+                    alt="Beauty & wellness ritual"
+                    orientation="landscape"
+                    group="beauty-care"
+                />
+                <ImageSlot
+                    images={care}
+                    offset={3}
+                    interval={5400}
+                    className="ph-e"
+                    alt="Beauty & wellness ritual"
+                    orientation="landscape"
+                    group="beauty-care"
+                />
+            {:else}
+                <Placeholder label="oils & candles · still life" className="ph-a" />
+                <Placeholder label="massage · hands at work" className="ph-b" />
+                <Placeholder label="pedicure detail" className="ph-c" />
+                <Placeholder label="hands · henna detail" className="ph-d" />
+                <Placeholder label="rose & ingredients" className="ph-e" />
+            {/if}
         </div>
     </div>
 </section>

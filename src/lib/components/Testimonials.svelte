@@ -27,7 +27,7 @@
     { num: '68%', label: 'Found us via word of mouth' }
   ];
 
-  const categories = ['All', 'Beauty', 'Chef', 'Cleaning'];
+  const categories = ['All', 'Beauty', 'Cleaning', 'Chef'];
   let filter = $state('All');
 
   function matchCat(svc) {

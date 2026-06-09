@@ -20,8 +20,8 @@
   <Strip />
   <About />
   <BeautySection />
-  <ChefSection />
   <CleaningSection />
+  <ChefSection />
   <Testimonials />
   <GiftAndLoyalty />
   <FAQ />

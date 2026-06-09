@@ -15,8 +15,8 @@
     </a>
     <ul class="nav__links" role="list">
       <li><a href="{base}/#beauty">Beauty & Wellness</a></li>
-      <li><a href="{base}/#chef">Private Chef</a></li>
       <li><a href="{base}/#cleaning">Cleaning</a></li>
+      <li><a href="{base}/#chef">Private Chef</a></li>
       <li><a href="{base}/#testimonials">Reviews</a></li>
       <li><a href="{base}/#about">About Lita</a></li>
       <li><a href="{base}/#faq">FAQ</a></li>

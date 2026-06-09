@@ -10,8 +10,8 @@
         <img src="{base}/lita-lane-logo.png" alt="Litalane" class="footer__logo" />
         <small>Newport · Wales · Est. 2023</small>
         <p>
-          A women-led practice for the people of Newport. Beauty, food,
-          and home care — done with attention.
+          A women-led practice for the people of Newport. Beauty &
+          wellness, home care, and hand-cooked food — done with attention.
         </p>
       </div>
 
@@ -19,8 +19,8 @@
         <h5>Services</h5>
         <ul>
           <li><a href="{base}/#beauty">Beauty & Wellness</a></li>
-          <li><a href="{base}/#chef">Private Chef</a></li>
           <li><a href="{base}/#cleaning">Home Cleaning</a></li>
+          <li><a href="{base}/#chef">Private Chef</a></li>
           <li><button type="button" class="footer__linklike" onclick={() => openContact('gift')}>Gift vouchers</button></li>
         </ul>
       </div>

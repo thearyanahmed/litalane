@@ -1,0 +1,79 @@
+{
+  "care-01.jpg": {
+    "src": "care-01.jpg",
+    "w": 1800,
+    "h": 1200,
+    "webp": "care-01.webp",
+    "avif": "care-01.avif",
+    "focal": [
+      0.354,
+      0.5
+    ]
+  },
+  "care-02.jpg": {
+    "src": "care-02.jpg",
+    "w": 1800,
+    "h": 1013,
+    "webp": "care-02.webp",
+    "avif": "care-02.avif",
+    "focal": [
+      0.35,
+      0.498
+    ]
+  },
+  "care-03.jpg": {
+    "src": "care-03.jpg",
+    "w": 1200,
+    "h": 1800,
+    "webp": "care-03.webp",
+    "avif": "care-03.avif",
+    "focal": [
+      0.5,
+      0.646
+    ]
+  },
+  "care-04.jpg": {
+    "src": "care-04.jpg",
+    "w": 1200,
+    "h": 1800,
+    "webp": "care-04.webp",
+    "avif": "care-04.avif",
+    "focal": [
+      0.5,
+      0.5
+    ]
+  },
+  "care-05.jpg": {
+    "src": "care-05.jpg",
+    "w": 1800,
+    "h": 1197,
+    "webp": "care-05.webp",
+    "avif": "care-05.avif",
+    "focal": [
+      0.374,
+      0.5
+    ]
+  },
+  "care-06.jpg": {
+    "src": "care-06.jpg",
+    "w": 1200,
+    "h": 1800,
+    "webp": "care-06.webp",
+    "avif": "care-06.avif",
+    "focal": [
+      0.5,
+      0.479
+    ]
+  },
+  "care-07.jpg": {
+    "src": "care-07.jpg",
+    "w": 1800,
+    "h": 1201,
+    "webp": "care-07.webp",
+    "avif": "care-07.avif",
+    "focal": [
+      0.354,
+      0.5
+    ]
+  }
+}

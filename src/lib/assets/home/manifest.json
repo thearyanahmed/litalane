@@ -1,0 +1,200 @@
+{
+  "home-01.jpg": {
+    "src": "home-01.jpg",
+    "w": 1350,
+    "h": 1800,
+    "webp": "home-01.webp",
+    "avif": "home-01.avif",
+    "focal": [
+      0.5,
+      0.492
+    ]
+  },
+  "home-02.jpg": {
+    "src": "home-02.jpg",
+    "w": 1800,
+    "h": 1200,
+    "webp": "home-02.webp",
+    "avif": "home-02.avif",
+    "focal": [
+      0.562,
+      0.5
+    ]
+  },
+  "home-03.jpg": {
+    "src": "home-03.jpg",
+    "w": 1800,
+    "h": 1200,
+    "webp": "home-03.webp",
+    "avif": "home-03.avif",
+    "focal": [
+      0.604,
+      0.5
+    ]
+  },
+  "home-04.jpg": {
+    "src": "home-04.jpg",
+    "w": 1201,
+    "h": 1800,
+    "webp": "home-04.webp",
+    "avif": "home-04.avif",
+    "focal": [
+      0.5,
+      0.5
+    ]
+  },
+  "home-05.jpg": {
+    "src": "home-05.jpg",
+    "w": 1285,
+    "h": 1800,
+    "webp": "home-05.webp",
+    "avif": "home-05.avif",
+    "focal": [
+      0.5,
+      0.602
+    ]
+  },
+  "home-06.jpg": {
+    "src": "home-06.jpg",
+    "w": 1800,
+    "h": 1200,
+    "webp": "home-06.webp",
+    "avif": "home-06.avif",
+    "focal": [
+      0.333,
+      0.5
+    ]
+  },
+  "home-07.jpg": {
+    "src": "home-07.jpg",
+    "w": 1350,
+    "h": 1800,
+    "webp": "home-07.webp",
+    "avif": "home-07.avif",
+    "focal": [
+      0.5,
+      0.609
+    ]
+  },
+  "home-08.jpg": {
+    "src": "home-08.jpg",
+    "w": 1350,
+    "h": 1800,
+    "webp": "home-08.webp",
+    "avif": "home-08.avif",
+    "focal": [
+      0.5,
+      0.609
+    ]
+  },
+  "home-09.jpg": {
+    "src": "home-09.jpg",
+    "w": 1601,
+    "h": 1800,
+    "webp": "home-09.webp",
+    "avif": "home-09.avif",
+    "focal": [
+      0.498,
+      0.554
+    ]
+  },
+  "home-10.jpg": {
+    "src": "home-10.jpg",
+    "w": 1800,
+    "h": 1350,
+    "webp": "home-10.webp",
+    "avif": "home-10.avif",
+    "focal": [
+      0.468,
+      0.5
+    ]
+  },
+  "home-11.jpg": {
+    "src": "home-11.jpg",
+    "w": 1350,
+    "h": 1800,
+    "webp": "home-11.webp",
+    "avif": "home-11.avif",
+    "focal": [
+      0.5,
+      0.445
+    ]
+  },
+  "home-12.jpg": {
+    "src": "home-12.jpg",
+    "w": 1800,
+    "h": 1200,
+    "webp": "home-12.webp",
+    "avif": "home-12.avif",
+    "focal": [
+      0.604,
+      0.5
+    ]
+  },
+  "home-13.jpg": {
+    "src": "home-13.jpg",
+    "w": 1200,
+    "h": 1800,
+    "webp": "home-13.webp",
+    "avif": "home-13.avif",
+    "focal": [
+      0.5,
+      0.521
+    ]
+  },
+  "home-14.jpg": {
+    "src": "home-14.jpg",
+    "w": 1800,
+    "h": 1200,
+    "webp": "home-14.webp",
+    "avif": "home-14.avif",
+    "focal": [
+      0.333,
+      0.5
+    ]
+  },
+  "home-15.jpg": {
+    "src": "home-15.jpg",
+    "w": 1200,
+    "h": 1800,
+    "webp": "home-15.webp",
+    "avif": "home-15.avif",
+    "focal": [
+      0.5,
+      0.562
+    ]
+  },
+  "home-16.jpg": {
+    "src": "home-16.jpg",
+    "w": 1800,
+    "h": 1200,
+    "webp": "home-16.webp",
+    "avif": "home-16.avif",
+    "focal": [
+      0.479,
+      0.5
+    ]
+  },
+  "home-17.jpg": {
+    "src": "home-17.jpg",
+    "w": 1800,
+    "h": 1200,
+    "webp": "home-17.webp",
+    "avif": "home-17.avif",
+    "focal": [
+      0.646,
+      0.5
+    ]
+  },
+  "home-18.jpg": {
+    "src": "home-18.jpg",
+    "w": 1800,
+    "h": 1200,
+    "webp": "home-18.webp",
+    "avif": "home-18.avif",
+    "focal": [
+      0.354,
+      0.5
+    ]
+  }
+}

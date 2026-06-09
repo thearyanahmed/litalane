@@ -1593,12 +1593,16 @@ body.scroll-lock { overflow: hidden; }
   .about__values { grid-template-columns: 1fr; }
   .svc { grid-template-columns: 1fr; gap: 40px; padding: 40px 0; }
   .svc--reverse .svc__media { order: 0; }
-  .svc__media {
+  .svc-beauty .svc__media,
+  .svc-chef .svc__media,
+  .svc-clean .svc__media {
     position: static;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
-  .svc__media > .img-slot {
+  .svc-beauty .svc__media > .img-slot,
+  .svc-chef .svc__media > .img-slot,
+  .svc-clean .svc__media > .img-slot {
     grid-column: 1;
     grid-row: auto;
     aspect-ratio: 4 / 3;
@@ -1608,7 +1612,10 @@ body.scroll-lock { overflow: hidden; }
   .svc-clean .ph-a,
   .svc-chef .ph-c { aspect-ratio: 3 / 4; }
   .svc-beauty .svc__quote,
-  .svc-clean .svc__media-note { grid-column: 1; grid-row: auto; }
+  .svc-clean .svc__media-note {
+    grid-column: 1;
+    grid-row: auto;
+  }
 
   .svc__quote { padding: 28px 24px 24px; }
   .svc__quote--dark { padding: 44px 24px 40px; margin-top: 20px; }
@@ -1619,6 +1626,7 @@ body.scroll-lock { overflow: hidden; }
   .svc__close-cta { font-size: 15px; padding: 14px 28px; }
   .pkg-row { grid-template-columns: 1fr; }
   .gift-card, .loyalty-card { padding: 32px 24px; min-height: 280px; }
+  .gift-grid { margin-top: 32px; }
   .gift-card .lantern { top: 20px; right: 20px; }
   .gift-grid { grid-template-columns: 1fr; }
   .faq__grid { grid-template-columns: 1fr; gap: 32px; }

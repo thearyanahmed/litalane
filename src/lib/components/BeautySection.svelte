@@ -126,20 +126,6 @@
                 {/each}
             </div>
 
-            <p class="price-note">
-                Each treatment is priced individually — message Lita for the
-                latest rates, package bundles, and any seasonal offers.
-            </p>
-
-            <div class="svc__cta-row">
-                <button
-                    class="btn btn--primary"
-                    onclick={() => openContact("beauty")}
-                >
-                    Message Lita to book <Arrow />
-                </button>
-                <span class="meta">Replies within 2 hrs</span>
-            </div>
         </div>
 
         <div class="svc__media">
@@ -220,6 +206,22 @@
                     <span class="svc__quote-meta">Stitches · 2013</span>
                 </figcaption>
             </figure>
+        </div>
+
+        <div class="svc__close">
+            <div class="svc__close-eyebrow">Ready when you are</div>
+            <h3 class="svc__close-title">Book your hour.</h3>
+            <p class="svc__close-note">
+                Each treatment is priced individually — message Lita for
+                the latest rates, package bundles, and any seasonal offers.
+            </p>
+            <button
+                class="btn btn--primary svc__close-cta"
+                onclick={() => openContact("beauty")}
+            >
+                Message Lita to book <Arrow />
+            </button>
+            <span class="svc__close-meta">Replies within 2 hrs</span>
         </div>
     </div>
 </section>

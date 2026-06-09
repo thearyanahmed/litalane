@@ -12,13 +12,6 @@
     <div class="section-head__title">
       <div class="svc__number">02 — Home Cleaning</div>
     </div>
-    <div class="section-head__meta">
-      <p class="body-m">
-        We don't sub-contract to strangers. Every cleaner is a woman Lita
-        has met, trained, and works with regularly. DBS-checked, eco
-        solvents, and the same face most weeks.
-      </p>
-    </div>
   </div>
 
   <div class="svc svc-clean">
@@ -85,6 +78,12 @@
       <ImageSlot images={home} offset={0} interval={5200} className="ph-a" alt="Lita Lane home cleaning" orientation="portrait" group="clean-home" />
       <ImageSlot images={home} offset={0} interval={4800} className="ph-b" alt="Lita Lane home cleaning" orientation="landscape" group="clean-home" />
       <ImageSlot images={home} offset={1} interval={5600} className="ph-c" alt="Lita Lane home cleaning" orientation="landscape" group="clean-home" />
+
+      <p class="svc__media-note">
+        We don't sub-contract to strangers. Every cleaner is a woman Lita
+        has met, trained, and works with regularly. DBS-checked, eco
+        solvents, and the same face most weeks.
+      </p>
     </div>
   </div>
 </section>

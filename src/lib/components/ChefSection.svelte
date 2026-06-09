@@ -25,7 +25,7 @@
       </div>
     </div>
 
-    <div class="svc svc-chef svc--reverse" style="border-top: 1px solid rgba(43,24,16,.15)">
+    <div class="svc svc-chef svc--reverse" style="border-top: 0">
       <div class="svc__media">
         <ImageSlot images={food} offset={3}  interval={5200} className="ph-a" alt="Plated dish · main" orientation="landscape" group="chef-food" />
         <ImageSlot images={food} offset={5} interval={4900} className="ph-c" alt="Ingredients still life" orientation="portrait" group="chef-food" />

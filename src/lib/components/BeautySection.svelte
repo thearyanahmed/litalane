@@ -196,6 +196,30 @@
                 <Placeholder label="hands · henna detail" className="ph-d" />
                 <Placeholder label="rose & ingredients" className="ph-e" />
             {/if}
+
+            <figure class="svc__quote">
+                <div class="svc__quote-mark" aria-hidden="true">"</div>
+                <blockquote>
+                    Caring for myself is not self-indulgence, it is
+                    self-preservation, and that is an act of political warfare.
+                </blockquote>
+                <figcaption>
+                    <span class="svc__quote-name">Audre Lorde</span>
+                    <span class="svc__quote-meta">A Burst of Light · 1988</span>
+                </figcaption>
+            </figure>
+
+            <figure class="svc__quote svc__quote--dark">
+                <div class="svc__quote-mark" aria-hidden="true">"</div>
+                <blockquote>
+                    Almost everything will work again if you unplug it for a
+                    few minutes, including you.
+                </blockquote>
+                <figcaption>
+                    <span class="svc__quote-name">Anne Lamott</span>
+                    <span class="svc__quote-meta">Stitches · 2013</span>
+                </figcaption>
+            </figure>
         </div>
     </div>
 </section>

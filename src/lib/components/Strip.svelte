@@ -7,8 +7,7 @@
         "Facials for sensitive skin",
         "Manicure & pedicure",
         "Hair treatment & home-made masks",
-        "Henna & natural body art",
-        "Brow & lash tidy",
+        "Henna",
         "Bridal & event styling",
         // Cleaning
         "Hourly & recurring weekly cleans",

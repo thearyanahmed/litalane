@@ -4,13 +4,15 @@
 </script>
 
 <section class="section wrap" id="about" aria-label="About Lita">
-    <div class="about__grid">
+    <div class="about__grid" style="grid-template-columns: 1fr; max-width: 760px; margin: 0 auto;">
+        <!--
         <div class="about__portrait">
             <Placeholder
                 label="lita's care space · still life"
                 style="width: 100%; height: 100%"
             />
         </div>
+        -->
         <div>
             <Eyebrow>{#snippet children()}About Lita{/snippet}</Eyebrow>
             <p class="about__quote" style="margin-top: 24px">

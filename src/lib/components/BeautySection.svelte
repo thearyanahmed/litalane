@@ -44,12 +44,8 @@
             note: "deep conditioning · with home-made mask",
         },
         {
-            name: "Henna & body art",
+            name: "Henna",
             note: "natural henna · occasions & everyday",
-        },
-        {
-            name: "Brow & lash tidy",
-            note: "shaping, tinting, gentle finish",
         },
     ];
 </script>
@@ -108,7 +104,7 @@
                     <div class="pkg__tag">Occasions</div>
                     <div class="pkg__name">Bridal & event</div>
                     <div class="pkg__desc">
-                        Pre-wedding, hen, birthday or just a friends' afternoon.
+                        Pre-wedding, hen or just a friends' afternoon.
                         Hair, henna and finishing touches for a small group.
                     </div>
                 </div>

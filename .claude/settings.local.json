@@ -65,7 +65,8 @@
       "Bash(curl -s http://localhost:5179/ -o /tmp/pfin.html)",
       "Bash(pkill -f \"vite dev --port 5179\")",
       "Bash(python3 -c 'import json,sys; m=json.load\\(sys.stdin\\); *)",
-      "Bash(python3 -c 'import json,sys *)"
+      "Bash(python3 -c 'import json,sys *)",
+      "Bash(rtk git *)"
     ]
   }
 }

@@ -50,10 +50,6 @@
           <span>Services</span>
         </div>
         <div class="item">
-          <strong>4.9<span style="font-size:18px;color:var(--terracotta)">★</span></strong>
-          <span>120+ reviews</span>
-        </div>
-        <div class="item">
           <strong>100%</strong>
           <span>Women-led</span>
         </div>

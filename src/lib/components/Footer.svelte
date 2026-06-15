@@ -40,7 +40,6 @@
           <li><a href="https://www.instagram.com/litalane" target="_blank" rel="noopener noreferrer" aria-label="Litalane on Instagram">Instagram</a></li>
           <li><a href="https://www.facebook.com/litalane" target="_blank" rel="noopener noreferrer" aria-label="Litalane on Facebook">Facebook</a></li>
           <li><a href="https://wa.me/447727855730" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Lita">WhatsApp</a></li>
-          <li><a href="https://www.tiktok.com/@litalane" target="_blank" rel="noopener noreferrer" aria-label="Litalane on TikTok">TikTok</a></li>
         </ul>
       </div>
     </div>

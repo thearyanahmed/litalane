@@ -22,7 +22,7 @@
   <BeautySection />
   <CleaningSection />
   <ChefSection />
-  <Testimonials />
+  <!-- <Testimonials /> -->
   <GiftAndLoyalty />
   <FAQ />
 </main>

@@ -62,7 +62,6 @@
       </div>
 
       <p class="price-note">
-        Cleaning starts from <strong>£16/hr</strong> on recurring plans.
         Message Lita for a quote based on your home and rhythm.
       </p>
 

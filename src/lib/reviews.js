@@ -40,7 +40,7 @@ const all = [
   },
   {
     first_name: "Ffion",
-    review: "No it's perfect i've only had a little mouthful, but I'm waiting for my husband to come back to eat the rest but it is stunning xxx. Thank you so much xxx",
+    review: "It's perfect i've only had a little mouthful, but I'm waiting for my husband to come back to eat the rest but it is stunning xxx. Thank you so much xxx",
   },
   {
     first_name: "Jasmin",

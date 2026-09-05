@@ -849,7 +849,7 @@ body.scroll-lock { overflow: hidden; }
   color: #2E2618;
   padding: 56px 0 64px;
 }
-.t-section > .wrap { padding: 0 48px; }
+@media (min-width: 961px) { .t-section > .wrap { padding: 0 48px; } }
 .t-section .eyebrow { color: #8A6636; }
 .t-section .h-section i { color: var(--terracotta); }
 .t-section .body-m, .t-section .body-l { color: #2E2618; }
@@ -1445,5 +1445,7 @@ body.scroll-lock { overflow: hidden; }
   .svc__quote--dark { padding: 36px 20px 32px; }
   .svc__quote blockquote { font-size: 16px; }
   .svc__quote-mark { font-size: 72px; }
+  .t-card { padding: 18px 18px; }
+  .t-rail { padding-left: 20px; margin-left: 14px; }
 }
 

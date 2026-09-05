@@ -97,7 +97,7 @@
     >
       <div class="booking__header">
         <div style="display: flex; align-items: center; gap: 12px">
-          <img src="{base}/lita-lane-mark.png" alt="" width="36" height="36" style="display: block" />
+          <img src="{base}/litalane-logo.webp" alt="" width="36" height="36" style="display: block; border-radius: 50%" />
           <div>
             <div style="font-family: var(--f-display); font-size: 20px; font-weight: 500; letter-spacing: 0.06em; line-height: 1">
               <span style="color: var(--cocoa)">LITA</span> <span style="color: #9a8f85; font-weight: 400">LANE</span>

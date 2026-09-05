@@ -7,7 +7,7 @@
   <div class="wrap">
     <div class="footer__grid">
       <div class="footer__brand">
-        <img src="{base}/lita-lane-logo.png" alt="Litalane" class="footer__logo" />
+        <img src="{base}/litalane-logo.webp" alt="Litalane" class="footer__logo" />
         <small>Newport · Wales · Est. 2023</small>
         <p>
           A women-led practice for the people of Newport. Beauty &

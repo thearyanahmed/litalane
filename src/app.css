@@ -1259,11 +1259,15 @@ body.scroll-lock { overflow: hidden; }
   width: auto;
   max-width: 100%;
   margin-bottom: 12px;
+  /* ponytail: logo is a round badge on a white square — clip to the circle */
+  border-radius: 50%;
 }
 .nav__mark {
   display: block;
   height: 44px;
   width: auto;
+  /* ponytail: logo is a round badge on a square canvas — clip to the circle */
+  border-radius: 50%;
 }
 .footer__brand small {
   display: block;

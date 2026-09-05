@@ -63,7 +63,7 @@
                 Lita trained in London for the kind of unhurried, women-only
                 practice Newport didn't yet have. She arrives at your door with
                 everything she needs — towels, oils, candles — and a quiet
-                hour where it's just you. Every product organic, every
+                hour where it's just you. Every product suitable for sensitive skin, every
                 appointment private.
             </p>
         </div>

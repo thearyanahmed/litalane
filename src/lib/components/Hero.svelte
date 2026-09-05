@@ -28,7 +28,7 @@
         <Eyebrow>{#snippet children()}Newport · Booking now{/snippet}</Eyebrow>
       </div>
       <h1 class="hero__title">
-        A quieter<br />kind of <em>care.</em>
+        A quiet<br />kind of <em>care.</em>
       </h1>
       <p class="hero__sub">
         Women-only beauty rituals, trusted home cleaning, and hand-cooked

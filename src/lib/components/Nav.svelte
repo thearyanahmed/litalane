@@ -2,6 +2,7 @@
   import { base } from '$app/paths';
   import Arrow from './Arrow.svelte';
   import { openContact } from '$lib/stores/contact.svelte.js';
+  import { reviews } from '$lib/reviews.js';
 </script>
 
 <nav class="nav" aria-label="Primary">
@@ -17,6 +18,7 @@
       <li><a href="{base}/#beauty">Beauty & Wellness</a></li>
       <li><a href="{base}/#cleaning">Cleaning</a></li>
       <li><a href="{base}/#chef">Private Chef</a></li>
+      {#if reviews.length}<li><a href="{base}/#testimonials">Reviews</a></li>{/if}
       <li><a href="{base}/#about">About Lita</a></li>
       <li><a href="{base}/#faq">FAQ</a></li>
     </ul>

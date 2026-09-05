@@ -60,7 +60,7 @@
         </div>
         <div class="section-head__meta">
             <p class="body-m">
-                Lita trained in London for the kind of unhurried, women-only
+                Lita trained in London and Cardiff for the kind of unhurried, women-only
                 practice Newport didn't yet have. She arrives at your door with
                 everything she needs — towels, oils, candles — and a quiet
                 hour where it's just you. Every product suitable for sensitive skin, every
@@ -73,9 +73,9 @@
         <div class="svc__hero">
             <div class="svc__features">
                 <span class="chip">Women-only</span>
-                <span class="chip">Organic products</span>
+                <span class="chip">High quality products</span>
                 <span class="chip">In your home</span>
-                <span class="chip">London-trained</span>
+                <span class="chip">London and Cardiff-trained</span>
                 <span class="chip">Newport area</span>
             </div>
 

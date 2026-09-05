@@ -11,10 +11,6 @@
             a: "Newport (NP10, NP18, NP19, NP20) and the surrounding areas including Caerleon, Maindee, and Bettws. For larger events or catering we can travel further — just ask.",
         },
         {
-            q: "Are your cleaners insured and checked?",
-            a: "Every cleaner is DBS-checked, fully insured, and personally trained by Lita. We don't use agency staff and you'll see the same face on recurring bookings.",
-        },
-        {
             q: "Is the food halal?",
             a: "All meat is sourced halal from local Newport butchers. The kitchen is alcohol-free. Vegetarian, vegan, and gluten-free menus available — just mention dietary needs when booking.",
         },

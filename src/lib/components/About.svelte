@@ -16,7 +16,7 @@
         <div>
             <Eyebrow>{#snippet children()}About Lita{/snippet}</Eyebrow>
             <p class="about__quote" style="margin-top: 24px">
-                "I trained in London for the kind of women-only practice I
+                "I trained in London and Cardiff for the kind of women-only practice I
                 couldn't find back home — unhurried, private, done by hand.
                 When I came back to Newport, I knew exactly the kind of
                 sanctuary I wanted to bring with me."
